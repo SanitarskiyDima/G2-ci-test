@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"skipped","Thu Nov 10 20:52:43 EET 2022","Thu Nov 10 20:52:43 EET 2022","1","","","","","","Registration with faker.js",""
+"failed","Thu Nov 10 20:52:04 EET 2022","Thu Nov 10 20:52:12 EET 2022","7826","","test","","","","Place order",""
+"failed","Thu Nov 10 20:52:12 EET 2022","Thu Nov 10 20:52:22 EET 2022","9540","","test","","","","Place order via search ",""
+"passed","Thu Nov 10 20:52:01 EET 2022","Thu Nov 10 20:52:02 EET 2022","639","","","","","","Test inheritance",""
+"skipped","Thu Nov 10 20:52:43 EET 2022","Thu Nov 10 20:52:43 EET 2022","3","","","","","","Registration",""
+"passed","Thu Nov 10 20:52:22 EET 2022","Thu Nov 10 20:52:37 EET 2022","15512","","test","","","","Place order via search with helper",""
+"passed","Thu Nov 10 20:51:57 EET 2022","Thu Nov 10 20:52:01 EET 2022","4351","","","","","","Authorization",""

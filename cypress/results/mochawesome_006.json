@@ -1,0 +1,153 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-11-10T18:52:04.659Z",
+    "end": "2022-11-10T18:52:37.632Z",
+    "duration": 32973,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7eafc4fa-8cb7-4f9f-8a74-e5839d08dd60",
+      "title": "",
+      "fullFile": "cypress/e2e/order.cy.js",
+      "file": "cypress/e2e/order.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c92c0105-2f36-4f98-831f-359d71edfa8a",
+          "title": "test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Place order",
+              "fullTitle": "test Place order",
+              "timedOut": null,
+              "duration": 7824,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.setCookie(\"AC_SF_8CEFDA09D5\", _user.default.AC_SF_8CEFDA09D5);\ncy.visit('/index.php?rt=product/product&product_id=52');\ncy.get('#product_quantity').clear().type('4');\ncy.get('.productpagecart').click();\ncy.get('#cart_checkout1').click();\ncy.get('#checkout_btn').click();\ncy.get('h1.heading1').should('contain', 'Your Order Has Been Processed!');\ncy.get('.contentpanel').should('contain', 'Thank you for shopping with us!').and('contain', 'Your order ').and('contain', 'has been created!');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#checkout_btn`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#checkout_btn`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/order.cy.js:15:7)",
+                "diff": null
+              },
+              "uuid": "cf68f9cd-ddcc-4c5a-bcf7-bff30b191063",
+              "parentUUID": "c92c0105-2f36-4f98-831f-359d71edfa8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Place order via search ",
+              "fullTitle": "test Place order via search ",
+              "timedOut": null,
+              "duration": 9539,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.setCookie(\"AC_SF_8CEFDA09D5\", _user.default.AC_SF_8CEFDA09D5);\ncy.visit('/');\n(0, _helper.searchExistingProduct)('Benefit Bella Bamba');\ncy.get('#product_quantity').clear().type('4');\ncy.get('.productpagecart').click();\ncy.get('#cart_checkout1').click();\ncy.get('#checkout_btn').click();\ncy.get('h1.heading1').should('contain', 'Your Order Has Been Processed!');\ncy.get('.contentpanel').should('contain', 'Thank you for shopping with us!').and('contain', 'Your order ').and('contain', 'has been created!');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#checkout_btn`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#checkout_btn`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/order.cy.js:36:7)",
+                "diff": null
+              },
+              "uuid": "8605bcdc-66c0-4014-8deb-2bda6a04d55a",
+              "parentUUID": "c92c0105-2f36-4f98-831f-359d71edfa8a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Place order via search with helper",
+              "fullTitle": "test Place order via search with helper",
+              "timedOut": null,
+              "duration": 15511,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?rt=account/login');\ncy.get('#loginFrm_loginname').type(_user.default.userName);\ncy.get('#loginFrm_password').type(_user.default.password);\ncy.get('button[title=\"Login\"]').click();\ncy.get('h1.heading1').should('contain', _user.default.firstName).and('contain', \"My Account\");\ncy.get('#filter_keyword').type('i').closest('form').submit();\n(0, _helper.searchProductWithRecursion)('Benefit Bella Bamba');\ncy.get('#product_quantity').clear().type('4');\ncy.get('.productpagecart').click();\ncy.get('#cart_checkout1').click();\ncy.get('#checkout_btn').click();\ncy.get('h1.heading1').should('contain', 'Your Order Has Been Processed!');\ncy.get('.contentpanel').should('contain', 'Thank you for shopping with us!').and('contain', 'Your order ').and('contain', 'has been created!');",
+              "err": {},
+              "uuid": "382d7368-8b92-4700-9a37-156a99d31acb",
+              "parentUUID": "c92c0105-2f36-4f98-831f-359d71edfa8a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "382d7368-8b92-4700-9a37-156a99d31acb"
+          ],
+          "failures": [
+            "cf68f9cd-ddcc-4c5a-bcf7-bff30b191063",
+            "8605bcdc-66c0-4014-8deb-2bda6a04d55a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 32874,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "configFile": "reporter-config.json",
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-11-10T18:52:43.041Z",
+    "end": "2022-11-10T18:52:43.083Z",
+    "duration": 42,
+    "testsRegistered": 2,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eb0d5245-c975-4e36-b472-422be6c86bce",
+      "title": "",
+      "fullFile": "cypress/e2e/registration.cy.js",
+      "file": "cypress/e2e/registration.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Registration",
+          "fullTitle": "Registration",
+          "timedOut": null,
+          "duration": 0,
+          "state": "pending",
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": true,
+          "context": null,
+          "code": "",
+          "err": {},
+          "uuid": "d20077b7-f33f-4b56-88cc-f042615fd016",
+          "parentUUID": "eb0d5245-c975-4e36-b472-422be6c86bce",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Registration with faker.js",
+          "fullTitle": "Registration with faker.js",
+          "timedOut": null,
+          "duration": 0,
+          "state": "pending",
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": true,
+          "context": null,
+          "code": "",
+          "err": {},
+          "uuid": "4ed578c9-e34d-4336-8370-e495e3034372",
+          "parentUUID": "eb0d5245-c975-4e36-b472-422be6c86bce",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [],
+      "pending": [
+        "d20077b7-f33f-4b56-88cc-f042615fd016",
+        "4ed578c9-e34d-4336-8370-e495e3034372"
+      ],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "configFile": "reporter-config.json",
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
