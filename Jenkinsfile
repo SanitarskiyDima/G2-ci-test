@@ -10,9 +10,11 @@ pipeline {
             }
         }
         stage('Cypress run') {
-            catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
-                sh 'npm run allure:clear'
-                sh 'npm run cy:run:allure --record --key 8c01844a-96f3-499c-97f6-00f5dbdb8fb6'
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
+                    sh 'npm run allure:clear'
+                    sh 'npm run cy:run:allure --record --key 8c01844a-96f3-499c-97f6-00f5dbdb8fb6'
+                }
             }
         }
         stage('Allure report') {
