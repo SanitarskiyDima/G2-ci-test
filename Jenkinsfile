@@ -19,7 +19,13 @@ pipeline {
         }
         stage('Allure report') {
             steps {
-                sh 'npm run allure:generate'
+                    sh 'npm run allure:report'
+                    sh 'ls'
+                    sh 'pwd'
+                    allure( 
+                        includeProperties: false, 
+                        jdk: '', 
+                        results: [[path: 'allure-results']])
             }
         }
     }
