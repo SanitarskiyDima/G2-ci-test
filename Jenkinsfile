@@ -12,11 +12,7 @@ pipeline {
         stage('Cypress run auth') {
             steps {
                 sh 'npm run allure:clear'
-                sh 'npm run cy:run:allure --spec "cypress/e2e/authorization.cy.js"'
-            }
-            steps {
-                sh 'npm run allure:clear'
-                sh 'npm run cy:run:allure --spec "cypress/e2e/order.cy.js"'
+                sh 'npm run cy:run:allure --record --key 8c01844a-96f3-499c-97f6-00f5dbdb8fb6'
             }
         }
         stage('Allure report') {
