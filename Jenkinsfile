@@ -21,8 +21,6 @@ pipeline {
             steps {
                     sh 'npm run allure:generate'
                     allure(
-                        includeProperties: false,
-                        jdk: '',
                         results: [[path: 'allure-results']])
             }
         }
