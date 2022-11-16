@@ -2,6 +2,6 @@
 /allure-report/
 /allure-results/
 /cypress/screenshots/
-/cypress/videos/
 /cypress/downloads/
 /cypress/results/
+/cypress/videos/
