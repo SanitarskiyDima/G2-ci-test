@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Allure report') {
             steps {
-                    sh 'npm run ci-allure:report'
+                    sh 'npm run allure:generate'
                     allure(
                         includeProperties: false,
                         jdk: '',
