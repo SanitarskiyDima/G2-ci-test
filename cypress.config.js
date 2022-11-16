@@ -2,7 +2,6 @@ const { defineConfig } = require("cypress");
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = defineConfig({
-  projectId: "fu1mw5",
   viewportHeight: 1080,
   viewportWidth: 1920,
   reporter: 'mochawesome',
@@ -21,4 +20,3 @@ module.exports = defineConfig({
     },
   },
 });
-

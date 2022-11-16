@@ -1,7 +1,7 @@
-/node_modules
-/allure-report
-/allure-results
-/cypress/results
-/cypress/screenshots
-/cypress/videos
-/cypress/downloads
+/node_modules/
+/allure-report/
+/allure-results/
+/cypress/screenshots/
+/cypress/videos/
+/cypress/downloads/
+/cypress/results/
