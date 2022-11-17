@@ -21,7 +21,8 @@ pipeline {
             steps {
                     sh 'npm run allure:generate'
                     allure(
-                        results: [[path: 'allure-results']])
+                        results: [[path: 'allure-results']]
+                        )
             }
         }
     }
